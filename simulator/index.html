@@ -4,17 +4,17 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://openhutb.github.io/.github/simulator/" rel="canonical"/>
 <link href="../img/favicon.ico" rel="shortcut icon"/>
-<title>模拟器演示：涉水效果 - 社区介绍</title>
+<title>模拟器简介 - 社区介绍</title>
 <link href="../css/theme.css" rel="stylesheet"/>
 <link href="../css/theme_extra.css" rel="stylesheet"/>
 <link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" rel="stylesheet"/>
 <script>
         // Current page data
-        var mkdocs_page_name = "\u6a21\u62df\u5668\u6f14\u793a\uff1a\u6d89\u6c34\u6548\u679c";
-        var mkdocs_page_input_path = "introduction.md";
-        var mkdocs_page_url = null;
+        var mkdocs_page_name = "\u6a21\u62df\u5668\u7b80\u4ecb";
+        var mkdocs_page_input_path = "simulator.md";
+        var mkdocs_page_url = "/.github/simulator/";
       </script>
 <!--[if lt IE 9]>
       <script src="../js/html5shiv.min.js"></script>
@@ -30,13 +30,21 @@
 <a class="icon icon-home" href=".."> 社区介绍
         </a><div role="search">
 <form action="../search.html" class="wy-form" id="rtd-search-form" method="get">
-<input aria-label="Search docs" name="q" placeholder="搜索文档" title="Type search term here" type="text"/>
+<input aria-label="Search docs" name="q" placeholder="Search docs" title="Type search term here" type="text"/>
 </form>
 </div>
 </div>
 <div aria-label="Navigation menu" class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation">
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="..">首页</a>
+</li>
+</ul>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal current" href="./">模拟器简介</a>
+<ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="#openhutb-的工作原理">OpenHUTB 的工作原理</a>
+</li>
+</ul>
 </li>
 </ul>
 <ul>
@@ -53,10 +61,6 @@
 </ul>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../paper_tips/">论文写作技巧</a>
-</li>
-</ul>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../bib_reference_guide/">Latex文献引用编译办法</a>
 </li>
 </ul>
 <ul>
@@ -81,22 +85,26 @@
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../dev/sign_up/">注册 Github 账号</a>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="../dev/vscode_push/">使用 VScode 推送代码</a>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="../pycharm-tutorial/">PyCharm 教程</a>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../resolve_conflict/">使用 TortoiseGit 解决冲突</a>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../dev/merge_commit/">合并提交</a>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="../dev/vm_disk/">给 Ubuntu 虚拟机硬盘扩容</a>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="../note/">注意事项</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../wsl/">wsl 安装与配置和卸载</a>
 </li>
 </ul>
 <p class="caption"><span class="caption-text">工具与资源</span></p>
-<ul class="current">
-<li class="toctree-l1 current"><a class="reference internal current" href="#">模拟器演示：涉水效果</a>
-<ul class="current">
-</ul>
-</li>
+<ul>
 <li class="toctree-l1"><a class="reference internal" href="../tools/">开源工具列表</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../blender/">三维建模软件 Blender 介绍</a>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../markdown2anything/">Markdown 一键发布到社交平台</a>
 </li>
@@ -126,32 +134,33 @@
 <div class="rst-content"><div aria-label="breadcrumbs navigation" role="navigation">
 <ul class="wy-breadcrumbs">
 <li><a aria-label="Docs" class="icon icon-home" href=".."></a></li>
-<li class="breadcrumb-item">工具与资源</li>
-<li class="breadcrumb-item active">模拟器演示：涉水效果</li>
+<li class="breadcrumb-item active">模拟器简介</li>
 <li class="wy-breadcrumbs-aside">
-<a href="https://github.com/OpenHUTB/.github/edit/master/docs/introduction.md"> 编辑页面</a>
+<a class="icon icon-github" href="https://github.com/OpenHUTB/.github/edit/master/docs/simulator.md"> Edit on GitHub</a>
 </li>
 </ul>
 <hr/>
 </div>
 <div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
 <div class="section" itemprop="articleBody">
-<div><h2 id="_1">涉水效果</h2>
-<ul>
-<li>流固耦合</li>
-</ul>
-<p><div class="video-container"><video alt="type:video" autoplay="" controls="" loop="" style="position:relative;width:100%;height:22.172vw"><source src="../img/117%20Fording%20Simulation%20Constraint%20Fluids.mp4" type="video/mp4"/></video></div></p></div>
+<div><h1 id="openhutb-模拟器简介">OpenHUTB 模拟器简介</h1>
+<h2 id="openhutb-的工作原理">OpenHUTB 的工作原理</h2>
+<p><a href="https://github.com/OpenHUTB/hutb"><strong>OpenHUTB</strong></a> 的模块化架构，使其非常适合用于构建覆盖多种机体形态的机器人策略，包括人形机器人、肌肉骨骼人、地面载具、空域载具、水域载具。</p>
+<p>它还提供了一个完整的机器人学习框架，涵盖从环境搭建到策略训练的全流程，同时支持模仿学习和强化学习方法。此外，你可以通过集成多种物理引擎（如 NVIDIA® PhysX®、MuJoCo、Chrono）进一步定制和扩展 OpenHUTB 的能力。</p>
+<p><img alt="" src="../img/how_OpenHUTB_works.jpg"/></p></div>
 </div>
 </div><footer>
 <div aria-label="Footer Navigation" class="rst-footer-buttons" role="navigation">
-<a class="btn btn-neutral float-left" href="../note/" title="注意事项"><span class="icon icon-circle-arrow-left"></span> 前一页</a>
-<a class="btn btn-neutral float-right" href="../tools/" title="开源工具列表">后一页 <span class="icon icon-circle-arrow-right"></span></a>
+<a class="btn btn-neutral float-left" href=".." title="首页"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+<a class="btn btn-neutral float-right" href="../CONTRIBUTING/" title="贡献指南">Next <span class="icon icon-circle-arrow-right"></span></a>
 </div>
 <hr/>
 <div role="contentinfo">
 <!-- Copyright etc -->
 <p>OpenHUTB 版权所有 © 2026</p>
 </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
 </footer>
 </div>
 </div>
@@ -160,10 +169,10 @@
 <div aria-label="Versions" class="rst-versions" role="note">
 <span class="rst-current-version" data-toggle="rst-current-version">
 <span>
-<a href="https://github.com/OpenHUTB/.github" style="color: #fcfcfc">OpenHUTB</a>
+<a class="fa fa-github" href="https://github.com/OpenHUTB/.github" style="color: #fcfcfc"> GitHub</a>
 </span>
-<span><a href="../note/" style="color: #fcfcfc">« 前一页</a></span>
-<span><a href="../tools/" style="color: #fcfcfc">后一页 »</a></span>
+<span><a href=".." style="color: #fcfcfc">« Previous</a></span>
+<span><a href="../CONTRIBUTING/" style="color: #fcfcfc">Next »</a></span>
 </span>
 </div>
 <script src="../js/jquery-3.6.0.min.js"></script>
